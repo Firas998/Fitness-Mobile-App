@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <div id="allexos">
+    {{#.}}
+    <div class="cardexo card-create" id="item-{{id}}">
+      <div class="card text-center" style="overflow: hidden">
+        <div class="card-header">{{exo}}</div>
+        <div class="card-body">
+          <div class="program_img">
+            <img src="{{imagesrc}}" alt="" />
+          </div>
+          <h5 class="card-title">Nombre de répétitions : {{time}}</h5>
+          <p class="card-text">Temps de pause: {{pause}}</p>
+        </div>
+        <div class="card-footer text-muted">{{descri}}</div>
+      </div>
+    </div>
+    {{/.}}
+  </div>
+</html>

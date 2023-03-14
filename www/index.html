@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/app.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ma première page html</title>
+  </head>
+  <body>
+    <div id="bodybuttons">
+      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvas" role="button" aria-expanded="false"><i class="fas fa-bars"></i></a>
+      <a class="btn btn-primary" href="#messenger" role="button"
+        ><i class="far fa-comments"></i>
+        <div id="badgemessage" class="badge">5</div></a
+      >
+    </div>
+
+    <nav class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" data-bs-keyboard="false" data-bs-backdrop="true" data-bs-scroll="true">
+      <div class="offcanvas-header border-bottom">WORKOUT</div>
+      <div class="offcanvas-body px-0">
+        <ul class="list-unstyled ps-0">
+          <li class="mb-1">
+            <a href="#trainplan" class="btn btn-toggle align-items-center rounded collapsed" role="button" aria-disabled="true">Programmes importés</a>
+          </li>
+          <li class="mb-1">
+            <a href="#search" class="btn btn-toggle align-items-center rounded collapsed" role="button" aria-disabled="true">Importer un programme</a>
+          </li>
+          <li class="mb-1">
+            <a href="#created" class="btn btn-toggle align-items-center rounded collapsed" role="button" aria-disabled="true">Programmes créés</a>
+          </li>
+          <li class="mb-1">
+            <a href="#calendar" class="btn btn-toggle align-items-center rounded collapsed" role="button" aria-disabled="true">Calendrier</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="modal fade" id="modalexo" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="wrapper" id="Exercise">
+              <div class="input-group mb-3 input-exo">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Nom de l'exercise</span>
+                </div>
+                <input type="text" id="name" class="form-control" aria-label="Default" />
+              </div>
+              <div class="input-group mb-3 input-exo">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Répétitions</span>
+                </div>
+                <input type="number" id="reps" class="form-control" aria-label="Default" />
+              </div>
+              <div class="input-group mb-3 input-exo inputexo">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Temps de pause</span>
+                </div>
+                <input type="number" id="rest" class="form-control" aria-label="Default" />
+              </div>
+              <input type="file" name="file" id="file" />
+
+              <h2>Exercise Description</h2>
+
+              <textarea id="desc" class="input-exo" placeholder="Describe the exercise"> </textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" id="annulerexo">Annuler</button>
+            <button type="button" class="btn btn-primary" id="creerexo">Sauvergader l'exercise</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="modal fade" id="modalprog" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel2">Créer un nouveau programme</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="wrapper" id="Program">
+              <div class="input-group mb-3 input-exo">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Nom du programme</span>
+                </div>
+                <input type="text" id="nameprog" class="form-control" aria-label="Default" />
+              </div>
+              <div class="input-group mb-3 input-exo">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">Séléctionnez une logo pour votre programme</span>
+                </div>
+                <input type="file" name="file2" id="file2" />
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" id="annulerprog">Annuler</button>
+            <button type="button" class="btn btn-primary" id="creerprog">Sauvergader le programme</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="my-content"></div>
+    <script src="js/fontawesome.js" crossorigin="anonymous"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/mustache.min.js"></script>
+    <script src="js/oauth.js"></script>
+    <script src="js/jquery.ui.touch-punch.js"></script>
+    <script src="js/appes6.js"></script>
+    <script src="#key" async defer></script>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="fr">
+  {{#.}}
+  <div class="users-list">
+    <a href="#messaging" onclick="localStorage.setItem('destinataire', '{{num2}}' )" data-whatever="{{num2}}">
+      <div class="content">
+        <div class="details">
+          <div>{{num2}}</div>
+          <p><b>Dernier message :</b> {{message}}</p>
+        </div>
+        <div class="status">{{lu}}</div>
+      </div>
+    </a>
+  </div>
+  {{/.}}
+</html>

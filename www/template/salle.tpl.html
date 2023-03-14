@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="fr">
+  {{#.}}
+  <div class="users-list">
+    <a href="#messaging" onclick="localStorage.setItem('destinataire', '{{login}}' )">
+      <div class="content">
+        <div class="details">{{login}}</div>
+      </div>
+    </a>
+  </div>
+  {{/.}}
+</html>

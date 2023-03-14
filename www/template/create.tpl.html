@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <button type="button" id="createexo" class="add btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalexo">Créer un nouvel exercise</button>
+  <div id="allex">
+    {{#.}}
+    <div class="cardexo card-create" id="item-{{id}}">
+      <div class="card text-center" style="overflow: hidden">
+        <div class="card-header">{{exo}}</div>
+        <div class="card-body">
+          <div class="program_img">
+            <img src="{{imagesrc}}" alt="" />
+          </div>
+          <h5 class="card-title">Nombre de répétitions : {{time}}</h5>
+          <h class="card-text">Temps de pause: {{pause}}</h>
+          <div id="createbuttons">
+            <button type="button" class="edit btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalexo" data-whatever="{{id}}">Modifier l'exercise</button>
+            <button type="button" class="deleteexo btn btn-primary" data-whatever="{{id}}">Supprimer l'exercise</button>
+          </div>
+        </div>
+        <div class="card-footer text-muted">{{descri}}</div>
+      </div>
+    </div>
+    {{/.}}
+  </div>
+</html>

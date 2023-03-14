@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <button id="createprogram" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalprog">Crééer un nouveau programe</button>
+  {{#.}}
+  <div class="card" id="program-{{id}}" style="overflow: hidden">
+    <div class="card text-center">
+      <div class="card-body">
+        <div class="imageexo">
+          <img class="exopicture" src="{{imagesrc}}" />
+        </div>
+        <h5 class="card-text">{{name}}</h5>
+        <h5 class="card-title">Crée le : {{creation}}</h5>
+        <button type="button" class="modifyprogram btn btn-primary" data-whatever="{{id}}">Modifier le programme</button>
+      </div>
+    </div>
+  </div>
+  {{/.}}
+</html>

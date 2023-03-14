@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="fr">
+  {{#.}}
+  <div class="card programcatalogue" id="program-{{id}}" style="overflow: hidden">
+    <a id="button-{{id}}" class="boutonprog btn btn-toggle align-items-center rounded collapsed" role="button" aria-disabled="true">Start Program</a>
+    <div class="card text-center">
+      <div class="card-header">{{creation}}</div>
+      <div class="card-body">
+        <h5 class="card-title">Created by : {{login}}</h5>
+        <p class="card-text">{{name}}</p>
+      </div>
+      <div class="card-footer text-muted">Added {{impo}}</div>
+    </div>
+  </div>
+  {{/.}}
+</html>
+<!DOCTYPE html> -->
+<!-- <!-- <html lang="fr">
+  <div class="card programcatalogue" id="program-{{id}}" style="overflow: hidden">
+    <a id="button-{{id}}" class="boutonprog btn btn-toggle align-items-center rounded collapsed" role="button" aria-disabled="true">Start Program</a>
+    <div class="card text-center">
+      <div class="card-header">creation</div>
+      <div class="card-body">
+        <h5 class="card-title">Created by :login</h5>
+        <p class="card-text">name</p>
+      </div>
+      <div class="card-footer text-muted">Added impo</div>
+    </div>
+  </div>
+</html> -->
+
+<div id="trainbody">
+  {{#.}}
+  <div class="programcontainer">
+    <div class="program">
+      <div class="program_img">
+        <img src="{{imagesrc}}" alt="" />
+      </div>
+      <div class="program_info">
+        <div class="program_date">
+          <span>Added on {{impo}}</span>
+        </div>
+        <h1 class="program_title">{{name}}</h1>
+        <p class="program_text">Created on : {{creation}} by {{login}}</p>
+        <div id="progbuttons">
+          <a id="button-1" class="program_cta btn btn-toggle align-items-center rounded collapsed" role="button" aria-disabled="true" data-whatever="{{id}}">Start Program</a>
+          <a id="button-detail" class="program_det btn btn-toggle align-items-center rounded collapsed" role="button" aria-disabled="true" data-whatever="{{id}}">Détails du programme</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{/.}}
+</div>

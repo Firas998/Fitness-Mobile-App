@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="fr">
+  {{#.}}
+  <div class="card" id="program-{{id}}" style="overflow: hidden">
+    <div class="card text-center">
+      <div class="card-body">
+        <div class="imageexo">
+          <img class="exopicture" src="{{imagesrc}}" />
+        </div>
+        <h5 class="card-title">Crée le : {{creation}} par <em>{{login}}</em></h5>
+        <p class="card-text">Nom du programme : {{name}}</p>
+        <button type="button" class="importprog btn btn-primary" data-whatever="{{id}}">Importer le programme</button>
+      </div>
+    </div>
+  </div>
+  {{/.}}
+</html>
